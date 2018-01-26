@@ -2,7 +2,9 @@
   <div id="app">
     <m-header></m-header>
     <tab></tab>
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
@@ -21,6 +23,6 @@ export default {
 <style lang="less">
   @import 'common/less/index.less';
   #app {
-    
+
   }
 </style>
